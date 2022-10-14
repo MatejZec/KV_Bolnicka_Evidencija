@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5EF0FF3-D4D2-4D01-833C-1BB142672E58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBolnickaEvidencija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBolnickaEvidencija.Designer.cs">
+      <DependentUpon>FormBolnickaEvidencija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDodajPacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodajPacijenta.Designer.cs">
+      <DependentUpon>FormDodajPacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKalendar.Designer.cs">
+      <DependentUpon>FormKalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaCekanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaCekanja.Designer.cs">
+      <DependentUpon>FormListaCekanja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMedRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedRecord.Designer.cs">
+      <DependentUpon>FormMedRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPatientsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatientsList.Designer.cs">
+      <DependentUpon>FormPatientsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPregled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPregled.Designer.cs">
+      <DependentUpon>FormPregled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDani.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDani.Designer.cs">
+      <DependentUpon>UserControlDani.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBolnickaEvidencija.resx">
+      <DependentUpon>FormBolnickaEvidencija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDodajPacijenta.resx">
+      <DependentUpon>FormDodajPacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKalendar.resx">
+      <DependentUpon>FormKalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaCekanja.resx">
+      <DependentUpon>FormListaCekanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedRecord.resx">
+      <DependentUpon>FormMedRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPatientsList.resx">
+      <DependentUpon>FormPatientsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPregled.resx">
+      <DependentUpon>FormPregled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDani.resx">
+      <DependentUpon>UserControlDani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{0503d240-092a-4ad0-99a8-2ce9b51a34b5}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacijenti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-cekanja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raspored.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personabig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
